@@ -1,48 +1,103 @@
-/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand[b-emfvoyloj2] {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+/* Sidebar contenedor */
+#sidebar-wrapper[b-emfvoyloj2] {
+	min-height: 100vh;
+	width: 250px;
+	background: linear-gradient(135deg, #1E2B32 0%, #2A3942 100%);
+	transition: all 0.3s ease;
+	box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+	border-radius: 10px 0 0 10px;
+	overflow: hidden;
 }
 
-a[b-emfvoyloj2] {
-  color: #0077cc;
+/* Sidebar colapsado */
+#wrapper.toggled #sidebar-wrapper[b-emfvoyloj2] {
+	margin-left: -250px;
 }
 
-.btn-primary[b-emfvoyloj2] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+/* Contenido principal */
+#page-content-wrapper[b-emfvoyloj2] {
+	flex: 1;
+	background-color: #1a1d20;
 }
 
-.nav-pills .nav-link.active[b-emfvoyloj2], .nav-pills .show > .nav-link[b-emfvoyloj2] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+/* Links del menú */
+.sidebar-link[b-emfvoyloj2] {
+	display: flex;
+	align-items: center;
+	padding: 12px 15px;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	transition: all 0.3s ease;
+	border-radius: 8px;
+	margin: 4px 8px;
 }
 
-.border-top[b-emfvoyloj2] {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom[b-emfvoyloj2] {
-  border-bottom: 1px solid #e5e5e5;
+	/* Hover */
+	.sidebar-link:hover[b-emfvoyloj2] {
+		background-color: rgba(47, 137, 252, 0.1);
+		color: #2f89fc;
+		transform: translateX(5px);
+	}
+
+	/* Active link */
+	.sidebar-link.active[b-emfvoyloj2] {
+		background-color: rgba(47, 137, 252, 0.2);
+		color: #2f89fc;
+		font-weight: 600;
+	}
+
+	/* Íconos */
+	.sidebar-link i[b-emfvoyloj2] {
+		margin-right: 10px;
+		font-size: 18px;
+	}
+
+/* Sidebar heading */
+.sidebar-heading[b-emfvoyloj2] {
+	padding: 15px;
+	background-color: #1E2B32;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 10px 10px 0 0;
 }
 
-.box-shadow[b-emfvoyloj2] {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+/* Botón hamburguesa */
+#sidebarToggle[b-emfvoyloj2] {
+	border: none;
+	color: #fff;
+	transition: all 0.3s ease;
 }
 
-button.accept-policy[b-emfvoyloj2] {
-  font-size: 1rem;
-  line-height: inherit;
+	#sidebarToggle:hover[b-emfvoyloj2] {
+		color: #2f89fc;
+		transform: scale(1.1);
+	}
+
+/* Barra superior */
+.navbar[b-emfvoyloj2] {
+	background-color: #2A3942;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Body dark theme */
+body[b-emfvoyloj2] {
+	background-color: #1a1d20;
+	color: #dee2e6;
+}
+
+/* Footer */
 .footer[b-emfvoyloj2] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+	background-color: #212529;
+	color: #dee2e6;
+}
+
+/* Contenedor de contenido */
+.container-fluid[b-emfvoyloj2] {
+	background-color: #1a1d20;
+	color: #dee2e6;
 }

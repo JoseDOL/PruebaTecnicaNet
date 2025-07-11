@@ -1,49 +1,60 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - frontend</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/frontend.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/_Layout.cshtml.css" asp-append-version="true" />
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">frontend</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="border-end bg-dark sidebar" id="sidebar-wrapper">
+            <div class="sidebar-heading text-white py-4 px-3 fs-4 fw-bold border-bottom">
+                Empleados
+            </div>
+            <div class="list-group list-group-flush">
+                <a class="sidebar-link" asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i> Home</a>
+                <a class="sidebar-link" asp-area="" asp-controller="Home" asp-action="Tree"><i class="fas fa-sitemap"></i> Árbol de empleados</a>
+                <a class="sidebar-link" asp-area="" asp-controller="Home" asp-action="Create"><i class="fas fa-user-plus"></i> Crear empleado</a>
+                <a class="sidebar-link" asp-area="" asp-controller="Home" asp-action="Edit"><i class="fas fa-edit"></i> Modificar empleado</a>
+                <a class="sidebar-link" asp-area="" asp-controller="Home" asp-action="Delete"><i class="fas fa-trash"></i> Eliminar empleado</a>
+                <a class="sidebar-link" asp-area="" asp-controller="Home" asp-action="Privacy"><i class="fas fa-shield-alt"></i> Privacy</a>
+            </div>
+        </div>
+        <!-- Page content wrapper -->
+        <div id="page-content-wrapper">
+            <!-- Top navigation -->
+            <nav class="navbar navbar-dark bg-dark border-bottom">
+                <button class="btn btn-dark" id="sidebarToggle">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+            </nav>
+            <!-- Page content -->
+            <div class="container-fluid p-4 bg-dark text-white" style="min-height: calc(100vh - 60px);">
+                @RenderBody()
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+            <footer class="border-top footer text-muted mt-4 bg-dark">
+                <div class="container">
+                    © 2025 - frontend - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </div>
+            </footer>
+        </div>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - frontend - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        // Sidebar toggle behavior
+        document.getElementById("sidebarToggle").addEventListener("click", function () {
+            document.getElementById("wrapper").classList.toggle("toggled");
+        });
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
