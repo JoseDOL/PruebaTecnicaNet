@@ -1,0 +1,7 @@
+C:\Users\josed\Downloads\Proyectos\PruebaTecnicaNet\frontend\obj\Release\net8.0\PubTmp\Out\frontend.exe
+C:\Users\josed\Downloads\Proyectos\PruebaTecnicaNet\frontend\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\josed\Downloads\Proyectos\PruebaTecnicaNet\frontend\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\josed\Downloads\Proyectos\PruebaTecnicaNet\frontend\obj\Release\net8.0\PubTmp\Out\frontend.dll
+C:\Users\josed\Downloads\Proyectos\PruebaTecnicaNet\frontend\obj\Release\net8.0\PubTmp\Out\frontend.deps.json
+C:\Users\josed\Downloads\Proyectos\PruebaTecnicaNet\frontend\obj\Release\net8.0\PubTmp\Out\frontend.runtimeconfig.json
+C:\Users\josed\Downloads\Proyectos\PruebaTecnicaNet\frontend\obj\Release\net8.0\PubTmp\Out\frontend.pdb
