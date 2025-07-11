@@ -1,0 +1,60 @@
+﻿@model List<frontend.Models.Empleado>
+
+@{
+    ViewData["Title"] = "Editar Empleado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Editar Empleado</h2>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-bordered align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Código</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Puesto</th>
+                            <th scope="col">Código Jefe</th>
+                            <th scope="col">Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var empleado in Model)
+                        {
+                            if (!empleado.EstaBorrado)
+                            {
+                                <tr>
+                                    <td>@empleado.Codigo</td>
+                                    <td>@empleado.Nombre</td>
+                                    <td>@empleado.Puesto</td>
+                                    <td>@(empleado.CodigoJefe.HasValue? empleado.CodigoJefe.ToString() : "N/A")</td>
+                                    <td>
+                                        <form asp-action="EditForm" method="post">
+                                            <input type="hidden" name="Codigo" value="@empleado.Codigo" />
+                                            <input type="hidden" name="Nombre" value="@empleado.Nombre" />
+                                            <input type="hidden" name="Puesto" value="@empleado.Puesto" />
+                                            <input type="hidden" name="CodigoJefe" value="@(empleado.CodigoJefe.HasValue? empleado.CodigoJefe.ToString() : 0)" />
+                                            <input type="hidden" name="EstaBorrado" value="@empleado.EstaBorrado.ToString()" />
+                                            <button type="submit" class="btn btn-primary btn-sm">
+                                                <i class="bi bi-pencil"></i> Editar
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4 text-center">
+        <a asp-action="Tree" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Volver
+        </a>
+    </div>
+</div>

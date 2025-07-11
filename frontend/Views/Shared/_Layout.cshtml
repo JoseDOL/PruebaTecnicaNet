@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - frontend</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/frontend.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <div class="border-end bg-dark sidebar" id="sidebar-wrapper">
+            <div class="sidebar-heading text-white py-4 px-3 fs-4 fw-bold border-bottom">
+                Empleados
+            </div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action" asp-area="" asp-controller="Home" asp-action="Tree">
+                    <i class="fas fa-sitemap"></i> Árbol de empleados
+                </a>
+                <a class="list-group-item list-group-item-action" asp-area="" asp-controller="Home" asp-action="Create">
+                    <i class="fas fa-user-plus"></i> Crear empleado
+                </a>
+                <a class="list-group-item list-group-item-action" asp-area="" asp-controller="Home" asp-action="Edit">
+                    <i class="fas fa-edit"></i> Modificar empleado
+                </a>
+                <a class="list-group-item list-group-item-action" asp-area="" asp-controller="Home" asp-action="Delete">
+                    <i class="fas fa-trash"></i> Eliminar empleado
+                </a>
+            </div>
+        </div>
+
+        <div id="page-content-wrapper">
+            
+            <div class="container-fluid p-4 bg-dark text-white" style="min-height: calc(100vh - 56px);">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const sidebarToggle = document.getElementById("sidebarToggle");
+        const sidebar = document.getElementById("sidebar-wrapper");
+        const wrapper = document.getElementById("wrapper");
+
+        sidebarToggle.addEventListener("click", function () {
+            sidebar.classList.toggle("show");
+            wrapper.classList.toggle("toggled");
+        });
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
