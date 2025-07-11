@@ -43,16 +43,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const sidebarToggle = document.getElementById("sidebarToggle");
-        const sidebar = document.getElementById("sidebar-wrapper");
-        const wrapper = document.getElementById("wrapper");
-
-        sidebarToggle.addEventListener("click", function () {
-            sidebar.classList.toggle("show");
-            wrapper.classList.toggle("toggled");
-        });
-    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
