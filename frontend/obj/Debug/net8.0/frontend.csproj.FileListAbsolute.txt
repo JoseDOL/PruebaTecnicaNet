@@ -32,3 +32,4 @@ C:\Users\josed\Downloads\Proyectos\PruebaTecnicaNet\frontend\obj\Debug\net8.0\re
 C:\Users\josed\Downloads\Proyectos\PruebaTecnicaNet\frontend\obj\Debug\net8.0\frontend.pdb
 C:\Users\josed\Downloads\Proyectos\PruebaTecnicaNet\frontend\obj\Debug\net8.0\frontend.genruntimeconfig.cache
 C:\Users\josed\Downloads\Proyectos\PruebaTecnicaNet\frontend\obj\Debug\net8.0\ref\frontend.dll
+C:\Users\josed\Downloads\Proyectos\PruebaTecnicaNet\frontend\obj\Debug\net8.0\scopedcss\Views\Home\Create.cshtml.rz.scp.css

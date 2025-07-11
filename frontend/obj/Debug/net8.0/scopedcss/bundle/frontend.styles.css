@@ -1,3 +1,14 @@
+/* _content/frontend/Views/Home/Create.cshtml.rz.scp.css */
+#employeeForm[b-564aulda4w] {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+}
+#employeeForm .create-button[b-564aulda4w] {
+	display: block;
+	margin: 20px auto 0;
+	width: 200px;
+}
 /* _content/frontend/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Sidebar contenedor */
 #sidebar-wrapper[b-emfvoyloj2] {

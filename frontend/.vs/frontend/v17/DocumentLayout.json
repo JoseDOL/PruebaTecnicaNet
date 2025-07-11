@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7106F7C7-42C7-4AA0-A759-1079C34C65CA}|frontend.csproj|c:\\users\\josed\\downloads\\proyectos\\pruebatecnicanet\\frontend\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7106F7C7-42C7-4AA0-A759-1079C34C65CA}|frontend.csproj|solutionrelative:views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7106F7C7-42C7-4AA0-A759-1079C34C65CA}|frontend.csproj|c:\\users\\josed\\downloads\\proyectos\\pruebatecnicanet\\frontend\\views\\home\\create.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7106F7C7-42C7-4AA0-A759-1079C34C65CA}|frontend.csproj|solutionrelative:views\\home\\create.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7106F7C7-42C7-4AA0-A759-1079C34C65CA}|frontend.csproj|c:\\users\\josed\\downloads\\proyectos\\pruebatecnicanet\\frontend\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7106F7C7-42C7-4AA0-A759-1079C34C65CA}|frontend.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7106F7C7-42C7-4AA0-A759-1079C34C65CA}|frontend.csproj|c:\\users\\josed\\downloads\\proyectos\\pruebatecnicanet\\frontend\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7106F7C7-42C7-4AA0-A759-1079C34C65CA}|frontend.csproj|solutionrelative:views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7106F7C7-42C7-4AA0-A759-1079C34C65CA}|frontend.csproj|c:\\users\\josed\\downloads\\proyectos\\pruebatecnicanet\\frontend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7106F7C7-42C7-4AA0-A759-1079C34C65CA}|frontend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7106F7C7-42C7-4AA0-A759-1079C34C65CA}|frontend.csproj|c:\\users\\josed\\downloads\\proyectos\\pruebatecnicanet\\frontend\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -17,6 +25,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{7106F7C7-42C7-4AA0-A759-1079C34C65CA}|frontend.csproj|c:\\users\\josed\\downloads\\proyectos\\pruebatecnicanet\\frontend\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{7106F7C7-42C7-4AA0-A759-1079C34C65CA}|frontend.csproj|solutionrelative:views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7106F7C7-42C7-4AA0-A759-1079C34C65CA}|frontend.csproj|c:\\users\\josed\\downloads\\proyectos\\pruebatecnicanet\\frontend\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7106F7C7-42C7-4AA0-A759-1079C34C65CA}|frontend.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7106F7C7-42C7-4AA0-A759-1079C34C65CA}|frontend.csproj|c:\\users\\josed\\downloads\\proyectos\\pruebatecnicanet\\frontend\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7106F7C7-42C7-4AA0-A759-1079C34C65CA}|frontend.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7106F7C7-42C7-4AA0-A759-1079C34C65CA}|frontend.csproj|c:\\users\\josed\\downloads\\proyectos\\pruebatecnicanet\\frontend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7106F7C7-42C7-4AA0-A759-1079C34C65CA}|frontend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,45 +46,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\Views\\Home\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Create.cshtml",
-              "ToolTip": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\Views\\Home\\Create.cshtml",
-              "RelativeToolTip": "Views\\Home\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-11T14:23:06.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml.css",
-              "DocumentMoniker": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml.css",
-              "ToolTip": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml.css",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAmwGcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-07-11T13:27:11.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-11T13:09:47.284Z",
+              "WhenOpened": "2025-07-11T15:09:56.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-11T15:09:26.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T15:09:23.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T15:09:18.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\Views\\Home\\Create.cshtml.css",
+              "RelativeDocumentMoniker": "Views\\Home\\Create.cshtml.css",
+              "ToolTip": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\Views\\Home\\Create.cshtml.css",
+              "RelativeToolTip": "Views\\Home\\Create.cshtml.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-11T14:56:01.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-11T14:52:01.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T14:41:22.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\Views\\Home\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Create.cshtml",
+              "ToolTip": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\Views\\Home\\Create.cshtml",
+              "RelativeToolTip": "Views\\Home\\Create.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T14:23:06.682Z",
               "EditorCaption": ""
             },
             {
@@ -75,7 +160,7 @@
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\frontend\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBsAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-11T13:08:03.028Z",
               "EditorCaption": ""
