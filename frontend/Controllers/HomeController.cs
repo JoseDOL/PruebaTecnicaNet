@@ -21,20 +21,69 @@ namespace frontend.Controllers
 			_configuration = configuration;
 			_httpClient.BaseAddress = new Uri(_configuration["ApiSettings:BaseUrl"]); 
 		}
-
-		public IActionResult Index()
-		{
-			return View();
-		}
-
-		public IActionResult Privacy()
-		{
-			return View();
-		}
+			
 		public IActionResult Create()
 		{
 			return View();
 		}
+
+
+		public async Task<IActionResult> Edit()
+		{
+			var response = await _httpClient.GetAsync("Empleados");
+			if (response.IsSuccessStatusCode)
+			{
+				try
+				{
+					var json = await response.Content.ReadAsStringAsync();
+					var empleados = JsonSerializer.Deserialize<List<Empleado>>(json, new JsonSerializerOptions
+					{
+						PropertyNameCaseInsensitive = true
+					});
+					return View(empleados ?? new List<Empleado>());
+				}
+				catch (JsonException ex)
+				{
+					return View(new List<Empleado>());
+				}
+			}
+			return View(new List<Empleado>());
+		}
+
+		[HttpPost]
+		public IActionResult EditForm(Empleado empleado)
+		{
+			if (empleado == null)
+			{
+				return RedirectToAction("Edit");
+			}
+			return View(empleado);
+		}
+
+		[HttpPost]
+		public async Task<IActionResult> Edit(Empleado empleado)
+		{
+			if (!ModelState.IsValid)
+			{
+				return View("EditForm", empleado);
+			}
+
+			empleado.EstaBorrado = false;
+			empleado.CodigoJefe = string.IsNullOrEmpty(empleado.CodigoJefe?.ToString()) || empleado.CodigoJefe == 0  ? null : empleado.CodigoJefe;
+
+			var json = JsonSerializer.Serialize(empleado);
+			var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+			var response = await _httpClient.PutAsync($"Empleados/{empleado.Codigo}", content);
+
+			if (response.IsSuccessStatusCode)
+			{
+				return RedirectToAction("Edit");
+			}
+
+			return View("EditForm", empleado);
+		}
+
 		public async Task<IActionResult> Tree()
 		{
 			var response = await _httpClient.GetAsync("Empleados");
@@ -93,7 +142,7 @@ namespace frontend.Controllers
 			{
 				return RedirectToAction("Delete");
 			}
-			return View();
+			return RedirectToAction("Delete");
 		}
 		[HttpPost]
 		public async Task<IActionResult> Create(Empleado empleado)
@@ -112,7 +161,7 @@ namespace frontend.Controllers
 
 			if (response.IsSuccessStatusCode)
 			{
-				return RedirectToAction("Index");
+				return RedirectToAction("Tree");
 			}
 
 			return View(empleado);

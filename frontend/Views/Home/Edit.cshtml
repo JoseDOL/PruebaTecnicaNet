@@ -1,12 +1,12 @@
 ﻿@model List<frontend.Models.Empleado>
 
 @{
-    ViewData["Title"] = "Eliminar Empleado";
+    ViewData["Title"] = "Editar Empleado";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="container mt-5">
-    <h2 class="mb-4 text-center">Eliminar Empleado</h2>
+    <h2 class="mb-4 text-center">Editar Empleado</h2>
 
     <div class="card shadow-sm">
         <div class="card-body">
@@ -32,10 +32,14 @@
                                     <td>@empleado.Puesto</td>
                                     <td>@(empleado.CodigoJefe.HasValue? empleado.CodigoJefe.ToString() : "N/A")</td>
                                     <td>
-                                        <form asp-action="Delete" method="post" onsubmit="return confirm('¿Está seguro de eliminar a @empleado.Nombre?');">
-                                            <input type="hidden" name="codigo" value="@empleado.Codigo" />
-                                            <button type="submit" class="btn btn-danger btn-sm">
-                                                <i class="bi bi-trash"></i> Eliminar
+                                        <form asp-action="EditForm" method="post">
+                                            <input type="hidden" name="Codigo" value="@empleado.Codigo" />
+                                            <input type="hidden" name="Nombre" value="@empleado.Nombre" />
+                                            <input type="hidden" name="Puesto" value="@empleado.Puesto" />
+                                            <input type="hidden" name="CodigoJefe" value="@(empleado.CodigoJefe.HasValue? empleado.CodigoJefe.ToString() : 0)" />
+                                            <input type="hidden" name="EstaBorrado" value="@empleado.EstaBorrado.ToString()" />
+                                            <button type="submit" class="btn btn-primary btn-sm">
+                                                <i class="bi bi-pencil"></i> Editar
                                             </button>
                                         </form>
                                     </td>

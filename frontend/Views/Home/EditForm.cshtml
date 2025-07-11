@@ -1,0 +1,42 @@
+﻿@model frontend.Models.Empleado
+
+@{
+    ViewData["Title"] = "Editar Empleado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Editar Empleado</h2>
+
+    <div class="m-0 row justify-content-center align-items-center">
+        <div class="card col-auto bg-secondary bg-gradient " style="width: 60rem;">
+            <form class="card-body" asp-action="Edit" method="post">
+                <input type="hidden" asp-for="Codigo" />
+                <div class="mb-3">
+                    <label asp-for="Nombre" class="control-label">Nombre</label>
+                    <input asp-for="Nombre" class="form-control" required />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Puesto" class="control-label">Puesto</label>
+                    <input asp-for="Puesto" class="form-control" required />
+                    <span asp-validation-for="Puesto" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="CodigoJefe" class="control-label">Código Jefe</label>
+                    <input asp-for="CodigoJefe" class="form-control" />
+                    <span asp-validation-for="CodigoJefe" class="text-danger"></span>
+                </div>
+                <div class=" mb-3 row justify-content-center align-items-center " style="width:100%;">
+                    <button type="submit" class="btn btn-primary col-auto" style="width:30%;">Guardar Cambios</button>
+                    <a asp-action="Edit" class="btn btn-danger col-auto" style="width:30%;">Cancelar</a>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
