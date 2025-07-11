@@ -1,0 +1,31 @@
+﻿@model Tuple<frontend.Models.Empleado, List<frontend.Models.Empleado>, int>
+
+@if (Model != null && Model.Item1 != null)
+{
+    var empleado = Model.Item1;
+    var allEmployees = Model.Item2;
+    var level = Model.Item3;
+    var subordinates = allEmployees.Where(e => e.CodigoJefe == empleado.Codigo).ToList();
+
+    if (subordinates.Any())
+    {
+        <ul class="list-group mt-2">
+            @foreach (var subordinado in subordinates)
+            {
+                var bgColor = level switch
+                {
+                    1 => "bg-secondary",
+                    2 => "bg-info",
+                    3 => "bg-success",
+                    4 => "bg-warning",
+                    _ => "bg-light"
+                };
+                var textColor = level > 3 ? "text-dark" : "text-white";
+                <li class="list-group-item @bgColor @textColor mb-2">
+                    Código: @subordinado.Codigo - @subordinado.Puesto - @subordinado.Nombre
+                    @Html.Partial("_EmployeeTreePartial", new Tuple<frontend.Models.Empleado, List<frontend.Models.Empleado>, int>(subordinado, allEmployees, level + 1))
+                </li>
+            }
+        </ul>
+    }
+}

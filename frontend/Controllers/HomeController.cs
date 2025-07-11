@@ -35,7 +35,66 @@ namespace frontend.Controllers
 		{
 			return View();
 		}
+		public async Task<IActionResult> Tree()
+		{
+			var response = await _httpClient.GetAsync("Empleados");
+			if (response.IsSuccessStatusCode)
+			{
+				try
+				{
+					var json = await response.Content.ReadAsStringAsync();
+					var empleadosAux = JsonSerializer.Deserialize<List<Empleado>>(json, new JsonSerializerOptions
+					{
+						PropertyNameCaseInsensitive = true 
+					});
+					if (empleadosAux == null)
+					{
+						empleadosAux = new List<Empleado>();
+					}
+					return View(empleadosAux);
+				}
+				catch (JsonException ex)
+				{
+					return View(new List<Empleado>());
+				}
+			}
+			else
+			{
+				return View(new List<Empleado>());
+			}
+		}
+		public async Task<IActionResult> Delete()
+		{
+			var response = await _httpClient.GetAsync("Empleados");
+			if (response.IsSuccessStatusCode)
+			{
+				try
+				{
+					var json = await response.Content.ReadAsStringAsync();
+					var empleados = JsonSerializer.Deserialize<List<Empleado>>(json, new JsonSerializerOptions
+					{
+						PropertyNameCaseInsensitive = true
+					});
+					return View(empleados ?? new List<Empleado>());
+				}
+				catch (JsonException ex)
+				{
+					return View(new List<Empleado>());
+				}
+			}
+			return View(new List<Empleado>());
+		}
 
+		[HttpPost]
+		public async Task<IActionResult> Delete(int codigo)
+		{
+			var response = await _httpClient.DeleteAsync($"Empleados/{codigo}");
+			if (response.IsSuccessStatusCode)
+			{
+				return RedirectToAction("Delete");
+			}
+			return View();
+		}
 		[HttpPost]
 		public async Task<IActionResult> Create(Empleado empleado)
 		{
@@ -45,11 +104,11 @@ namespace frontend.Controllers
 			}
 
 			empleado.EstaBorrado = false; 
-
+			empleado.CodigoJefe = empleado.CodigoJefe == 0? null: empleado.CodigoJefe;
 			var json = JsonSerializer.Serialize(empleado);
 			var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-			var response = await _httpClient.PostAsync("empleados", content);
+			var response = await _httpClient.PostAsync("Empleados", content);
 
 			if (response.IsSuccessStatusCode)
 			{

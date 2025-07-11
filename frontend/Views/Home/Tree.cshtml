@@ -1,0 +1,26 @@
+﻿@model List<frontend.Models.Empleado>
+
+@{
+    ViewData["Title"] = "Árbol de Empleados";
+}
+
+<h2 class="text-center mb-4">Árbol de Empleados</h2>
+
+@if (Model != null && Model.Any())
+{
+    <div class="container">
+        <ul class="list-group">
+            @foreach (var empleado in Model.Where(e => !e.CodigoJefe.HasValue))
+            {
+                <li class="list-group-item bg-primary text-white mb-2">
+                    <strong>Código: @empleado.Codigo - @empleado.Puesto - @empleado.Nombre</strong>
+                    @Html.Partial("_EmployeeTreePartial", new Tuple<frontend.Models.Empleado, List<frontend.Models.Empleado>, int>(empleado, Model, 1))
+                </li>
+            }
+        </ul>
+    </div>
+}
+else
+{
+    <p class="text-center text-danger">No hay datos disponibles.</p>
+}
