@@ -34,12 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -50,8 +46,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T03:23:23.942Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-11T03:23:23.942Z"
             },
             {
               "$type": "Document",
@@ -63,21 +58,19 @@
               "RelativeToolTip": "Servicios\\ServicioEmpleado.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAwwGQAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T03:14:42.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-11T03:14:42.377Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "backend",
+              "Title": "backend.csproj",
               "DocumentMoniker": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\backend\\backend.csproj",
               "RelativeDocumentMoniker": "backend.csproj",
               "ToolTip": "C:\\Users\\josed\\Downloads\\Proyectos\\PruebaTecnicaNet\\backend\\backend.csproj",
               "RelativeToolTip": "backend.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-11T03:13:58.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-11T03:13:58.573Z"
             },
             {
               "$type": "Document",
@@ -89,8 +82,7 @@
               "RelativeToolTip": "Models\\Empleado.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T02:57:28.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-11T02:57:28.707Z"
             },
             {
               "$type": "Document",
@@ -102,8 +94,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-11T02:53:18.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-11T02:53:18.67Z"
             },
             {
               "$type": "Document",
